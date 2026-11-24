@@ -1,8 +1,8 @@
 import pandas as pd
 from analysis import 정제, 반별평균
 
-본 = 정제(pd.read_csv("scores_2026.csv"))
-미니 = 정제(pd.read_csv("mini.csv"))
+본 = 정제(pd.read_csv("week12/scores_2026.csv"))
+미니 = 정제(pd.read_csv("week12/mini.csv"))
 
 def test_정제하면_100행이_남는다():
     assert len(본) == 100
